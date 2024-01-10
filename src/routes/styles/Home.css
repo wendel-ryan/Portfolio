@@ -1,5 +1,17 @@
 .home-page {
     height: 100vh;
     width: 100vw;
+    background-image: url('../../Components/img/home-background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-content {
+    position: fixed;
+    left: 10vw;
+    top: 0;
+    height: 100vh;
+    width: 50vw;
     background-color: black;
+    opacity: .75;
 }

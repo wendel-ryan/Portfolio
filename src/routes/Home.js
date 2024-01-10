@@ -7,7 +7,9 @@ const Home = () => {
     <div>
       <Navbar></Navbar>
       <section className='home-page'>
-
+        <div className='home-content'>
+          <div className='home-text'></div>
+        </div>
       </section>
     </div>
   )

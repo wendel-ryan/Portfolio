@@ -1,0 +1,92 @@
+.about-page {
+  height: 85vh;
+  position: relative;
+  background-color: black;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.headshot-black{
+  height: 35vh;
+  width: auto;
+  padding: 0;
+  border-right: 3px solid #7845d9;
+
+}
+
+.about-info {
+  height: 75vh;
+  width: 80vw;
+  padding: 5vh 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.portfolio{
+  display: flex;
+  flex-direction: row;
+  height: 37.5vh;
+  width: 80vw;
+  padding: 0;
+
+}
+
+.bio{
+  height: 37.5vh;
+  width: 60vw;
+  margin-left: 1vw;
+  font-size: calc(1.25vh + 1vw);
+  overflow: hidden;
+}
+
+.skills {
+  height: auto;
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+h3{
+  font-size: calc(1vh + 1vw);
+  color: white;
+  font-weight: 300;
+}
+
+@media (max-width: 900px) {
+.about-info{
+  height: 90vh;
+}
+
+  .skills {
+    height: 65vh;
+  }
+
+  .bio{
+    width: 80vw;
+    height: 32.5vh;
+    margin: 0;
+    text-align: center;
+  }
+
+  .about-page{
+    height: 100vh;
+  }
+
+  .portfolio{
+    height: 82vh;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .headshot-black{
+    display: flex;
+    width: 40vw;
+    height: auto;
+    margin: 1vh 20vw;
+    border-bottom: 3px solid #7845d9;
+    border-right: none;
+  }
+}

@@ -1,0 +1,23 @@
+.skill{
+  background-color: #7845d9;
+  z-index: 5;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid white;
+  margin: 20px;
+}
+
+h3{
+  color: white;
+  font-size: calc(1vh + 1vw);
+  margin: 1.5px 15px;
+}
+
+@media (max-width: 954px) {
+  .skill{
+    margin: 5px;
+  }
+
+}

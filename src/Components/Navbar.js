@@ -1,21 +1,36 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
+import { FaBars, FaTimes } from 'react-icons/fa'
+import { useRef } from 'react'
 import './styles/Navbar.css'
 import Logo from './img/Logo(white).png'
 
 const Navbar = () => {
+
+  const navRef = useRef();
+
+  const showNavbar = ( ) => {
+      navRef.current.classList.toggle('responsive-nav')
+  }
+
   return (
-    <div className='header'>
-        <Link to='/'>
-            <img className='Logo' src={Logo} alt='Logo'/>
-        </Link>
-        <ul className='nav-links'>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/About'>About</Link></li>
-            <li><Link to='/Projects'>Projects</Link></li>
-            <li><Link to='/Contact'>Contact</Link></li>    
-        </ul>    
-    </div>
+    <header className='header' ref={navRef}>
+        <nav className='nav' id='nav'>
+            <ul className='nav-links'>
+                <li className='link' onClick={showNavbar}><HashLink to='/#Home'>Home</HashLink></li>
+                <li className='link' onClick={showNavbar}><HashLink to='/#About'>About Me</HashLink></li>
+                <li className='img'><img className='Logo' src={Logo} alt='Logo'/></li>
+                <li className='link' onClick={showNavbar}><HashLink to='/#Projects'>Recent Projects</HashLink></li>
+                <li className='link' onClick={showNavbar}><HashLink to='/#Contact'>Contact</HashLink></li>    
+            </ul>
+        </nav>
+        <button className='nav-close-btn' onClick={showNavbar}>
+            <FaTimes className='x'/>
+        </button>
+        <button className='nav-btn' onClick={showNavbar}>
+            <FaBars className='bars' />
+        </button> 
+    </header>
   )
 }
 

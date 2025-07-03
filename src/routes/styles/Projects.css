@@ -1,0 +1,82 @@
+.projects-page{
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.left{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  margin: 0;
+  background-color: black;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.right{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  margin: 0;
+  background-color: black;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.big{
+  height: 70vh;
+  width: 5vw;
+}
+
+.small{
+  height: 20vh;
+  width: 2.5vw;
+}
+
+.arrowSmall{
+  color: white;
+  width: 1.5vw;
+  height: auto;
+  margin: 0 1vw;
+}
+
+.arrowBig{
+  color: white;
+  width: 3vw;
+  height: auto;
+  margin: 0 1vw;
+}
+
+.project{
+  width: 65vw;
+  height: 70vh;
+  position: fixed;
+  top: 5vh;
+  left: 17.5vw;
+  justify-content: space-between;
+  position: relative;
+}
+
+
+
+@media (max-width: 900px) {
+
+  .project {
+    width: 85vw;
+    left: 7.5vw;
+  }
+
+  .left{
+    width: 10vw;
+  }
+
+  .right{
+    width: 10vw;
+  }
+
+  .arrowBig{
+    width: 6vw;
+    margin: 0 2vw;
+  }
+}

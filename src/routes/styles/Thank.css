@@ -1,0 +1,73 @@
+section {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.thank {
+    width: 40vw;
+    height: 25vh;
+    display: flex;
+    position: fixed;
+    top: 25vh;
+    left: 30vw;
+}
+
+.thank-text {
+    width: 35vw;
+    height: 30vh;
+    padding: 2.5vh 2.5vw;
+    text-align: center;
+}
+
+span {
+    font-size: 2.1rem;
+    color: #7845D9;
+}
+
+.buttons {
+    height: 5vh;
+    width: 35vw;
+    justify-content: space-around;
+    margin: 2.5vh 0;
+}
+
+.buttons a {
+    height: 35px;
+    width: 150px;
+    background-color: #7845D9;
+    z-index: 10;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 900px) {
+    .thank {
+        width: 70vw;
+        height: 25vh;
+        display: flex;
+        position: fixed;
+        top: 25vh;
+        left: 17.5vw;
+    }
+
+    .thank-text {
+        width: 65vw;
+        height: 20vh;
+        padding: 2.5vh 2.5vw;
+        text-align: center;
+    }
+
+    .buttons {
+        width: 65vw;
+    }
+
+    .buttons a {
+        font-size: calc(1vw + 1.25vh);
+        height: auto;
+        width: calc(8vw + 8vh);
+        height: calc(2vh + 2vw);
+    }
+}

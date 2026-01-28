@@ -3,7 +3,7 @@ import "../Components/styles/Skill.css"
 
 const Skill = (props) => {
   return (
-    <div className='skill'><h3>{props.skill}</h3></div>
+    <div className='skill'><h3 className='skill-text'>{props.skill}</h3></div>
   )
 }
 

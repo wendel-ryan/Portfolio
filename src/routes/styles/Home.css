@@ -1,5 +1,6 @@
 .home-page {
   height: 80vh;
+  overflow-y: hidden;
 }
 
 .home {
@@ -12,22 +13,23 @@
 }
 
 .home-content {
-  height: 65vh;
+  height: 55vh;
   width: 80vw;
-  padding: 12.5vh 10vw 2.5vh 10vw;
+  padding: 15vh 10vw 2.5vh 10vw;
   justify-content: space-evenly;
+  overflow: hidden;
 }
 
 .headshot {
-  height: 65vh;
+  height: 55vh;
   width: auto;
   border-left: 3px solid #7845d9;
 }
 
 .home-text {
   width: 35vw;
-  height: 65vh;
-  justify-content: space-evenly;
+  height: 55vh;
+  justify-content: space-AROUND;
 }
 
 .intro {
@@ -84,5 +86,15 @@
 
     .mission{
       height: 20vh;
+    }
+    
+    li.link{
+        width: 75vw;
+        margin: 0 12.5vw;
+        padding: 5vh 0;
+    }
+
+    a{
+        overflow-y: hidden;
     }
 }

@@ -9,7 +9,7 @@
   border-bottom-left-radius: 20px;
   display: flex;
   margin: 0;
-  background-color: black;
+  background-color: whitesmoke;
   justify-content: space-around;
   cursor: pointer;
 }
@@ -19,7 +19,7 @@
   border-bottom-right-radius: 20px;
   display: flex;
   margin: 0;
-  background-color: black;
+  background-color: whitesmoke;
   justify-content: space-around;
   cursor: pointer;
 }
@@ -42,7 +42,7 @@
 }
 
 .arrowBig{
-  color: white;
+  color: #7845d9;
   width: 3vw;
   height: auto;
   margin: 0 1vw;

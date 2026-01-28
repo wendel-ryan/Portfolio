@@ -19,8 +19,10 @@
 
 .project-text{
   width: 50vw;
-  height: 40vh;
-  margin: 0vh 2.5vw;
+  height: 45vh;
+  margin: 0vh 1.5vw;
+  color: black;
+  overflow-y: hidden;
 }
 
 p {
@@ -36,7 +38,6 @@ h2 {
 
 img[src=""] {
   display: none;
-  
 }
 
 .website div img {
@@ -49,7 +50,7 @@ img[src=""] {
   }
 
   .project-text{
-    height: 45vh;
+    height: 50vh;
     width: 60vw;
   }
 

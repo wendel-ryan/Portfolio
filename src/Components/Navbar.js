@@ -3,7 +3,7 @@ import { HashLink } from 'react-router-hash-link'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { useRef } from 'react'
 import './styles/Navbar.css'
-import Logo from './img/Logo(white).png'
+import Logo from './img/Logo(black).png'
 
 const Navbar = () => {
 

@@ -1,5 +1,5 @@
 .bars {
-    color: white;
+    color: black;
     height: 50px;
     width: auto;
     padding: 0;
@@ -7,12 +7,12 @@
 }
 .nav{
   height: 80px;
-  width: 40vw;
-  padding: 0 30vw;
+  width: 70vw;
+  padding: 0 15vw;
 }
 
 .x {
-    color: white;
+    color: black;
     height: 50px;
     width: auto;
     padding: 0;
@@ -42,13 +42,13 @@ button {
     height: 80px;
     margin-bottom: -80px;
     z-index: 100;
-    background-color: rgba(0,0,0,1);
+    background-color: whitesmoke;
 }
 
 .Logo {
     height: 50px;
-    width: auto;
-    padding: 15px 15px;
+    width: 50px;
+    padding: 15px calc((15vw - 50px)/2);
     z-index: 5;
     position: relative;
 }
@@ -60,7 +60,7 @@ button {
     padding: 0;
     z-index: 3;
     height: 80px;
-    width: 40vw;
+    width: 70vw;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -68,16 +68,18 @@ button {
 .nav-links li {
     padding: 0;
     z-index: 3;
+    width: 15vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    text-align: center;
 }
 
 .nav-links li a {
     text-decoration: none;
     font-size: calc(.9vh + .9vw);
-    font-weight: 500;
-    color: white;
+    font-weight: 600;
+    color: black;
     z-index: 3;
 }
 
@@ -112,7 +114,7 @@ button {
         left: 0;
         display: flex;
         justify-content: center;
-        background-color: rgba(0,0,0,.85);
+        background-color: whitesmoke;
         transform: .5s;
     }
 

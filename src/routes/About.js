@@ -27,7 +27,7 @@ const About = () => {
         <div className="portfolio">
           <img className="headshot-black" src={Headshot} alt="none"></img>
           <div className="bio">
-            <h3>{text}</h3>
+            <h3 className="bio-text">{text}</h3>
           </div>
         </div>
         <div className="skills">

@@ -27,6 +27,7 @@
 .big{
   height: 70vh;
   width: 5vw;
+  border: none;
 }
 
 .small{

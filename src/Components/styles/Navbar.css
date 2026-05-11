@@ -19,11 +19,11 @@
     z-index: 5;
 }
 
-.nav-close-btn {
+.nav-close {
     display: none;
 }
 
-button {
+.btn {
     background-color: transparent;
     border: none;
     height: auto;

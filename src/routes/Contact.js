@@ -47,13 +47,13 @@ export default class Contact extends Component {
                 message in the form below or send me an email at
                 wendel.ryan@yahoo.com.
               </p>
-            <form onSubmit={this.sendEmail}>
-                <label>Name:</label>
-                <input ref="name" type="text" name="user_name" />
-                <label>Email:</label>
-                <input ref="email" type="email" name="user_email" />
-                <label>Message:</label>
-                <textarea ref="message" name="message" />
+            <form className="contact-form" onSubmit={this.sendEmail}>
+                <label className="contact-label">Name:</label>
+                <input className="contact-input" ref="name" type="text" name="user_name" />
+                <label className="contact-label">Email:</label>
+                <input className="contact-input" ref="email" type="email" name="user_email" />
+                <label className="contact-label">Message:</label>
+                <textarea className="contact-textarea" ref="message" name="message" />
                 <input className="submit" type="submit" value="Send" />
             </form>
           </div>

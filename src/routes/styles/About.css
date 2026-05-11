@@ -50,7 +50,7 @@
   justify-content: space-around;
 }
 
-h3{
+.bio-text{
   font-size: calc(1.15vh + .9vw);
   color: black;
   font-weight: 300;
@@ -58,9 +58,9 @@ h3{
 }
 
 @media (max-width: 900px) {
-.about-info{
-  height: 90vh;
-}
+  .about-info{
+    height: 90vh;
+  }
 
   .skills {
     height: 65vh;

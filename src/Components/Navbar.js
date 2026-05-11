@@ -24,10 +24,10 @@ const Navbar = () => {
                 <li className='link' onClick={showNavbar}><HashLink to='/#Contact'>Contact</HashLink></li>    
             </ul>
         </nav>
-        <button className='nav-close-btn' onClick={showNavbar}>
+        <button className='nav-close-btn btn' onClick={showNavbar}>
             <FaTimes className='x'/>
         </button>
-        <button className='nav-btn' onClick={showNavbar}>
+        <button className='nav-btn btn' onClick={showNavbar}>
             <FaBars className='bars' />
         </button> 
     </header>

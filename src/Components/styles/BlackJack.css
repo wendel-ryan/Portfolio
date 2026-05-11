@@ -1,0 +1,273 @@
+.BJ {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(10, 151, 63);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.settings {
+    height: 100%;
+    width: 200px;
+}
+
+.settings form {
+    height: 94%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.settings form label {
+    color: white;
+    font-family: 'Rye', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.settings form input {
+    height: 30px;
+    width: 150px;
+    align-self: center;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.settings form button {
+    height: 35px;
+    width: 100px;
+    align-self: center;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    font-family: 'Rye', serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.gameStats {
+    height: 150px;
+    width: 150px;
+    color: white;
+    font-family: 'Rye', serif;
+    font-size: 20px;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.placeHolder {
+    height: 150px;
+    width: 150px;
+    display: flex;
+}
+
+.gameStats p {
+    margin: 0;
+}
+
+.betForm {
+    display: none;
+}
+
+.top{
+    width: 100%;
+    height: 28%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.coms{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bottom{
+    width: 100%;
+    height: 32%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dealer{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.user{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card{
+    height: 110px;
+    width: auto;
+    margin: 0 -10px;
+}
+
+.hand{
+    height: 97%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.universal{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.stand{
+    margin-top: 5px;
+    margin-bottom: auto;
+}
+
+.BJP{
+    color: white;
+    font-family: 'Rye', serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.userBtns{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.BJB{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Rye', serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.userBtns button{
+    width: 60px;
+}
+
+.total{
+    color: white;
+    font-family: 'Rye', serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+
+button{
+    overflow: hidden;
+    align-items: center;
+}
+
+@media (max-width: 900px) {
+    .top{
+        height: 30%;
+    }
+
+    .middle{
+        height: 20%;
+    }
+
+    .bottom{
+        height: 35%;
+    }
+
+    .settings form button{
+        height: auto;
+        width: 90px;
+        font-size: 13px;
+        align-items: center;
+    }
+
+    .settings form input{
+        height: auto;
+        width: 120px;
+        font-size: 13px;
+    }
+
+    .settings form label{
+        font-size: 15px;
+    }
+
+    .gameStats{
+        height: auto;
+        border: none;
+    }
+
+    .gameStats p{
+        font-size: 15px;
+    }
+
+    .card{
+        height: 80px;
+        width: auto;
+        display: flex;
+        align-items: center;
+        margin: 0 -10px;
+    }
+
+    .BJB{
+        text-decoration: none;
+        color: black;
+    }
+
+    .user{
+        width: 100%;
+    }
+
+    .dealer{
+        width: 100%;
+    }
+
+    .hand{
+        width: 100%;
+    }
+    
+}

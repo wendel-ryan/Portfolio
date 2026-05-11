@@ -10,7 +10,7 @@ const Thank = () => {
       <Navbar/>
       <div className='thank container'>
         <div className='thank-text column'>
-          <span>Thank You!</span>
+          <span className='thank'>Thank You!</span>
           <p>I will get back to you in the near future!</p>
           <div className='buttons row'>
             <Link to='/About'>About Me</Link>

@@ -1,16 +1,32 @@
 import React from "react";
 import "./styles/Project.css";
+import Blackjack from "./BlackJack";
+import { FaTimes } from 'react-icons/fa'  
 
-const Project = (props) => {
+export default class Project extends React.Component {
+  constructor(props) {
+    super(props);
+    this.image = this.image.bind(this);
+    this.display = this.display.bind(this);
+    this.liveDemo = this.liveDemo.bind(this);
+    this.state = {
+      showProject: false,
+      display: props.display,
+      id: props.id,
+      CurrentIMG: props.CurrentIMG,
+      Images: props.Images,
+      text: props.text,
+      name: props.name,
+    };
+  }
+  
 
-  let showProject = false;
-
-  const image = (props) => {
-    if (props.CurrentIMG!=="none"){
+  image = () => {
+    if (this.state.CurrentIMG!=="none"){
       return (
         <img
           className="project-img"
-          src={props.CurrentIMG}
+          src={this.state.CurrentIMG}
           alt=''
         ></img>
       );
@@ -19,37 +35,44 @@ const Project = (props) => {
     }
   }
 
-  const display = () => {
-    showProject = !showProject;
+  display = () => {
+    this.setState({showProject: !this.state.showProject});
   }
 
-  const liveDemo = (id) => {
-    if(id === 'BJ') return (
-      <button className="sample" onClick={display()}>Live Demo</button>
+  liveDemo = () => {
+    if(this.state.id === 'BJ') return (
+      <button className="sample" onClick={this.display}>Live Demo</button>
     )
     return null;
   }
 
-  if (!showProject){
-    return (
-      <div
-        id={props.id}
-        style={{ display: props.display }}
-        className="app column"
-      >
-        <div className="img-scroller">
-          {image(props)}
+  render(){
+    if (!this.state.showProject){
+      return (
+        <div
+          id={this.state.id}
+          style={{ display: this.state.display }}
+          className="app column"
+        >
+          <div className="img-scroller">
+            {this.image(this.state)}
+          </div>
+          <div className="project-text">
+            {this.liveDemo()}
+            <h2 className="project-h2">{this.state.name}</h2>
+            <p className="project-p">{this.state.text}</p>
+          </div>
         </div>
-        <div className="project-text">
-          {liveDemo(props.id)}
-          <h2>{props.name}</h2>
-          <p>{props.text}</p>
+      );
+    } else {
+      return (
+        <div id="BJ" className="app column">
+          <div className="closeOut">
+            <FaTimes className="close" onClick={this.display}/>
+          </div>
+          <Blackjack />
         </div>
-      </div>
-    );
-  } else {
-    return null;
+      );
+    }
   }
 };
-
-export default Project;

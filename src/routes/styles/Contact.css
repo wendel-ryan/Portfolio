@@ -31,18 +31,18 @@
   font-size: calc(.55vw + 1.1vh);
 }
 
-form {
+.contact-form {
   height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
-label {
+.contact-label {
   font-size: calc(.55vw + 1.1vh);
 }
 
-input {
+.contact-input {
   width: 35vw;
   margin: 0 12.5vw;
   border-radius: 7.5px;
@@ -50,7 +50,7 @@ input {
   text-align: center;
 }
 
-textarea {
+.contact-textarea {
   width: 50vw;
   height: 10vh;
   margin: 0 5vw;

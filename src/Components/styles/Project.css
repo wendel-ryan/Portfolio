@@ -20,7 +20,7 @@
 .project-text{
   width: calc(100% - 3vw);
   height: 45vh;
-  margin: 0 1.5vw;
+  margin: 0 2.5vw;
   color: black;
   overflow-y: hidden;
 }

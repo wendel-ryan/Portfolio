@@ -15,10 +15,11 @@ const Home = () => {
           </div>
           <div className="mission">
             <p className="mission-text">
-              Hardworking, motivated software developer with experience
-              designing and implementing solution-focused software on a windows
-              system, looking for an entry level lob to expand my technical
-              skills and gain workplace experience.
+              Hardworking and motivated software developer with hands‑on 
+              experience designing and implementing solution‑focused 
+              applications in Windows environments. Seeking an entry‑level 
+              role to expand my technical skills, contribute to meaningful 
+              projects, and gain valuable industry experience.
             </p>
           </div>
         </div>

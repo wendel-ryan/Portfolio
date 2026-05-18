@@ -9,30 +9,27 @@ import fantasy2 from "../Components/img/Fantasy1.jpg";
 import fantasy3 from "../Components/img/Fantasy1.jpg";
 
 const Projects = () => {
-  const Fantasytxt = `A Python Flask application that assists the user in drafting 
-  a fantasy football team by allowing them to compare different projection sources 
-  while following along with their draft. Each year, multiple sources generate
-  fantasy football projections, and while they are very similar in many ways, even 
-  small rankings discrepencies can have major implications. The application utilizes 
-  selenium, Pandas, SQL Alchemy, and SQLite to collect and store fantasy football projections 
-  from different sources before generating an average set of rankings. The user can
-  then follow along with their draft while being able to view the rankings that their
-  league can view, as well ass the industy averages as well as alternate sources. The 
-  application also allows the user to access and compare stats from previous seasons 
-  for each team and player.`;
+  const Fantasytxt = `Built a full‑stack fantasy football web application featuring user 
+  authentication, automated data collection, and interactive draft‑planning tools. Implemented 
+  a secure login system with duplicate‑account prevention and password‑strength validation. 
+  Used Selenium to scrape player statistics and expert rankings from multiple sources, storing 
+  normalized data in an SQLite database. Generated aggregated player rankings and provided tools 
+  for highlighting preferred players, comparing multiple players side‑by‑side, and viewing 
+  historical team and player performance. Added a customizable draft simulator that uses league 
+  settings to help users predict draft outcomes and track picks in real time.`;
 
-  const BJtxt = `A React.JS application that simulates playing Blackjack by using 
-  the Deck of Cards API (deckofcardsapi.com). This project is still in development, 
-  but future plans include a feature to help the user learn to count cards, make 
-  informed decisions based off of the cards on the table, manage a balance, count 
-  wins/losses, and help teach the user how to tip the odds in their favor. 
-  Additionally I would like to add other card games and/or games that might be played in a casino.`;
+  const BJtxt = `Developed an interactive blackjack simulator that recreates a casino‑style gameplay
+   experience using React.js. Implemented full blackjack rules including hit, stand, double, and split 
+   actions, along with dealer logic and multi‑hand simulation. Integrated the Deck of Cards API to generate 
+   real card data and built a balance‑tracking system that allows users to set a starting bankroll and 
+   place bets each round. Simulated a full blackjack table with the dealer and two additional players, 
+   enabling realistic game flow and state transitions.`;
 
-  const Websitetxt = `A React.JS application that is hosted on Hostinger. Within the 
-  website visitors can find a brief section about me, a recent projects page with some
-  of my recent work, a link to my github and my resume, and a form to get ahold of me 
-  externally powered by email.JS. Additionally, he website is frequently tested using
-   Selenium to ensure it's operational status.`;
+  const Websitetxt = `Developed a fully responsive personal portfolio website featuring a dynamic 
+  About Me section, an interactive skills overview, and a projects showcase that includes a playable 
+  blackjack demo built with React. Implemented a contact form powered by EmailJS to allow visitors 
+  to send messages directly to my inbox. Designed the site with a clean layout, reusable components, 
+  and smooth navigation to highlight professional experience and technical strengths.`;
 
   function forwardProject() {
     if (document.getElementById("website").style.display !== "none") {

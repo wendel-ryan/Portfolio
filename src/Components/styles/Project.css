@@ -20,13 +20,13 @@
 .project-text{
   width: calc(100% - 3vw);
   height: 45vh;
-  margin: 0 2.5vw;
+  margin: 0 1.5vw;
   color: black;
   overflow-y: hidden;
 }
 
 .project-p {
-  font-size: calc(.55vw + 1.1vh);
+  font-size: calc(1vh + .85vw);
   text-align: center;
   margin: 0 0;
 }

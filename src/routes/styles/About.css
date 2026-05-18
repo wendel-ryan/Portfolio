@@ -1,5 +1,5 @@
 .about-page {
-  height: 85vh;
+  height: 95vh;
   position: relative;
   background-color: whitesmoke;
   left: 0;
@@ -7,39 +7,22 @@
   padding: 0;
 }
 
-.headshot-black{
-  height: 35vh;
-  width: auto;
-  padding: 0;
-  border-right: 3px solid #7845d9;
-
-}
-
 .about-info {
-  height: 75vh;
+  height: 85vh;
   width: 80vw;
-  padding: 5vh 10vw;
+  padding: 2.5vh 10vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
-.portfolio{
-  display: flex;
-  flex-direction: row;
-  height: 35vh;
-  width: 80vw;
-  padding: 0;
-  overflow-y: hidden;
-}
-
 .bio{
-  height: 35vh;
-  width: 60vw;
-  margin-left: 1vw;
-  font-size: calc(1.25vh + 1vw);
-  overflow: hidden;
+  height: 50vh;
+  width: 80vw;
+  font-size: calc(1.15vh + .9vw);
   color: black;
+  font-weight: 300;
+  margin: 0;
 }
 
 .skills {
@@ -50,25 +33,22 @@
   justify-content: space-around;
 }
 
-.bio-text{
-  font-size: calc(1.15vh + .9vw);
-  color: black;
-  font-weight: 300;
-  margin: 0;
-}
-
 @media (max-width: 900px) {
   .about-info{
-    height: 90vh;
-  }
+    height: 97.5vh;
+    width: 90vw;
+    padding: 2.5vh 5vw 0 5vw ;
+
+}
 
   .skills {
-    height: 65vh;
+    width: 90vw;
+    height: 50vh;
   }
 
   .bio{
-    width: 80vw;
-    height: 32.5vh;
+    width: 90vw;
+    height: 45vh;
     margin: 0;
     text-align: center;
   }

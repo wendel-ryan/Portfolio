@@ -196,29 +196,75 @@ export default class Blackjack extends Component {
     dealer = this.sim(dealer);
     if(this.state.split){
         for(let i=0;i<user.length;i++){
-            if(this.total(user[i]) > 21 || (this.total(dealer) <= 21 && this.total(dealer) > this.total(user[i]))){
+            let userTotal = this.total(user[i]);
+            let dealerTotal = this.total(dealer);
+            if (userTotal>21){
                 losses++;
-            }else if((this.total(user[i]) === 21&&user[i].length === 2)&& !(this.total(dealer) === 21&&dealer.length === 2)){
-                balance += wager[i] * 2.5;
+            }else if (dealerTotal>21){
                 wins++;
-            }else if(this.total(user[i]) === this.total(dealer)){
-                balance += wager[i];
+                balance += wager[0] * 2;
             }else{
-                wins++;
-                balance += wager[i] * 2;
+                if(userTotal>dealerTotal){
+                    if(userTotal === 21 && user.length === 2){
+                        balance += wager[0] *.5;
+                    }
+                    wins++;
+                    balance += wager[0] * 2;
+                }else if(userTotal<dealerTotal){
+                    losses++;
+                }else{
+                    if(userTotal ===21){
+                        if(user[i].length===2){
+                            if(dealer.length >2){
+                                wins++;
+                                balance += wager[0]*1.5;
+                            }
+                            balance += wager[0];
+                        }else if(dealer.length === 2){
+                            losses++;
+                        }else{
+                            balance += wager[0]; 
+                        }
+                    }else{
+                        balance += wager[0];
+                    }
+                }
             }
         }
     }else{
-        if(this.total(user) > 21 || (this.total(dealer) <= 21 && this.total(dealer) > this.total(user))){
+        let userTotal = this.total(user);
+        let dealerTotal = this.total(dealer);
+        if (userTotal>21){
             losses++;
-        }else if(this.total(user) === this.total(dealer)){
-            balance += wager[0];
-        }else if((this.total(user) === 21&&user.length === 2)&& !(this.total(dealer) === 21&&dealer.length === 2)){
-                balance += wager[0] * 2.5;
-                wins++;
-        }else{
+        }else if (dealerTotal>21){
             wins++;
             balance += wager[0] * 2;
+        }else{
+            if(userTotal>dealerTotal){
+                if(userTotal === 21 && user.length === 2){
+                    balance += wager[0] *.5;
+                }
+                wins++;
+                balance += wager[0] * 2;
+            }else if(userTotal<dealerTotal){
+                losses++;
+            }else{
+                if(userTotal ===21){
+                    if(user.length===2){
+                        if(dealer.length >2){
+                            wins++;
+                            balance += wager[0]*1.5;
+                        }
+                        balance += wager[0];
+                    }else if(dealer.length === 2){
+                        losses++;
+                    }else{
+                        balance += wager[0]; 
+                    }
+                }else{
+                    balance += wager[0];
+                }
+            }
         }
     }
     this.setState({
